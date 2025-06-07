@@ -8,6 +8,9 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
       font-family: 'Montserrat', sans-serif;
       background: #ffffff;
       color: #0a1f44;
@@ -58,16 +61,24 @@
       margin: 0.5rem 1rem 0 0;
       padding: 0.75rem 1.5rem;
       font-weight: 600;
-      border-radius: 5px;
+      border-radius: 40px;
       text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     .whatsapp {
-      background: #25D366;
+      background: linear-gradient(135deg, #25D366, #128C7E);
       color: #fff;
     }
+    .whatsapp:hover {
+      background: linear-gradient(135deg, #1ebe57, #0d6d60);
+    }
     .email {
-      background: #0a1f44;
+      background: linear-gradient(135deg, #0a1f44, #003366);
       color: #fff;
+    }
+    .email:hover {
+      background: linear-gradient(135deg, #0e2d64, #002244);
     }
     .hero-image {
       flex: 1 1 400px;
@@ -78,24 +89,53 @@
       max-width: 500px;
     }
     footer {
+      margin-top: auto;
       background: #0a1f44;
       color: white;
       text-align: center;
       padding: 2rem 1rem;
       margin-top: 4rem;
     }
-  </style>
+  @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .logo img {
+    width: 220px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .hero-text {
+    padding: 0;
+  }
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+  .hero-buttons a {
+    display: block;
+    margin: 0.75rem auto;
+    width: 80%;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 2rem;
+  }
+  .hero-image img {
+    max-width: 90%;
+  }
+}
+</style>
 </head>
 <body>
   <header>
-<!--     <h1>LAC Analytics</h1> -->
     <div class="logo">
       <img src="/lac-logo.png" alt="LAC ANALYTICS" />
     </div>
-    <nav>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
-    </nav>
   </header>
 
   <section class="hero">
@@ -103,7 +143,7 @@
       <h2>Data Analytics Inteligente para seu Negócio</h2>
       <p>Mais de 100 milhões de dados analisados. Transforme informação em decisão com relatórios de BI visualmente claros e impactantes.</p>
       <div class="hero-buttons">
-        <a href="https://wa.me/5511987654321" class="whatsapp">Fale via WhatsApp</a>
+        <a href="https://wa.me/5562985650119" class="whatsapp">Fale via WhatsApp</a>
         <a href="mailto:contato@lacanalytics.com" class="email">Envie um Email</a>
       </div>
     </div>
