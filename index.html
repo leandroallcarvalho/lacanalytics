@@ -2,136 +2,112 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <!-- título da página -->
-  <title>LAC Analytics | Business Intelligence & Data Analytics</title>
-  
-  <!-- Meta description e keywords -->
-  <meta name="description" content="LAC Analytics: Transformamos dados complexos em decisões simples. Mais de 100 milhões de dados analisados para impulsionar seu negócio. Contate-nos via WhatsApp ou Email." />
-  <meta name="keywords" content="BI, Business Intelligence, Analytics, dados, análise de dados, relatórios de BI, LAC Analytics, insights, big data" />
-  
-  <!-- Instruções aos robôs de busca -->
-  <meta name="robots" content="index, follow" />
-  
-  <!-- URL canônica -->
-  <link rel="canonical" href="https://www.lacanalytics.com/" />
-  
-  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="LAC Analytics | Transformamos dados em decisões" />
-  <meta property="og:description" content="Mais de 100 milhões de dados analisados. Insights que impulsionam resultados. Fale conosco via WhatsApp ou Email." />
-  <meta property="og:url" content="https://www.lacanalytics.com/" />
-  <meta property="og:site_name" content="LAC Analytics" />
-  <meta property="og:image" content="https://www.lacanalytics.com/assets/og-image.png" />
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="LAC Analytics | Dados que transformam negócios" />
-  <meta name="twitter:description" content="Mais de 100 milhões de dados analisados para gerar insights e decisões simples. Fale conosco via WhatsApp ou Email." />
-  <meta name="twitter:image" content="https://www.lacanalytics.com/assets/twitter-card.png" />
-  
-  <!-- Google Search Console (substitua PELO SEU CÓDIGO) -->
-  <meta name="google-site-verification" content="SEU_CODIGO_DE_VERIFICACAO" />
-  
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "LAC Analytics",
-    "url": "https://www.lacanalytics.com/",
-    "logo": "https://www.lacanalytics.com/assets/logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "telephone": "+55-11-98765-4321",
-      "areaServed": "BR",
-      "availableLanguage": "Portuguese"
-    }
-  }
-  </script>
-  
-  <!-- Fonte Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAC Analytics | Business Intelligence</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* reset mínimo */
-    * { margin:0; padding:0; box-sizing:border-box; }
-    html, body {
-      height:100%;
-      font-family:'Montserrat', sans-serif;
-      background:#f5f7fa;
-      color:#0a1f44;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:1rem;
+      font-family: 'Montserrat', sans-serif;
+      background: #ffffff;
+      color: #0a1f44;
     }
-    .container {
-      background:#fff;
-      max-width:360px;
-      width:100%;
-      padding:2rem;
-      border-radius:8px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.1);
-      text-align:center;
+    header {
+      background: #ffffff;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e1e4e8;
     }
-    h1 {
-      font-size:2rem;
-      font-weight:700;
-      margin-bottom:0.5rem;
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
     }
-    p {
-      font-size:1rem;
-      margin-bottom:1.5rem;
-      line-height:1.4;
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      color: #0a1f44;
     }
-    .buttons {
-      display:flex;
-      gap:1rem;
-      flex-wrap:wrap;
-      justify-content:center;
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      background: #f8f9fc;
     }
-    .btn {
-      display:inline-block;
-      padding:0.75rem 1.5rem;
-      border-radius:4px;
-      text-decoration:none;
-      font-weight:700;
-      transition:background 0.3s ease;
+    .hero-text {
+      flex: 1 1 400px;
+      padding-right: 2rem;
     }
-    .btn-whatsapp {
-      background:#25D366;
-      color:#fff;
+    .hero-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
-    .btn-whatsapp:hover {
-      background:#1ebe57;
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
     }
-    .btn-email {
-      background:#0a1f44;
-      color:#fff;
+    .hero-buttons a {
+      display: inline-block;
+      margin: 0.5rem 1rem 0 0;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      border-radius: 5px;
+      text-decoration: none;
     }
-    .btn-email:hover {
-      background:#091a39;
+    .whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+    .email {
+      background: #0a1f44;
+      color: #fff;
+    }
+    .hero-image {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+    .hero-image img {
+      width: 100%;
+      max-width: 500px;
+    }
+    footer {
+      background: #0a1f44;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>LAC Analytics</h1>
-    <p>Transformamos dados complexos em decisões simples.</p>
-    <div class="buttons">
-      <a href="https://wa.me/5511987654321" class="btn btn-whatsapp" target="_blank" rel="noopener">
-        WhatsApp
-      </a>
-      <a href="mailto:contato@lacanalytics.com" class="btn btn-email">
-        Email
-      </a>
+    <nav>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Data Analytics Inteligente para seu Negócio</h2>
+      <p>Mais de 100 milhões de dados analisados. Transforme informação em decisão com relatórios de BI visualmente claros e impactantes.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/5511987654321" class="whatsapp">Fale via WhatsApp</a>
+        <a href="mailto:contato@lacanalytics.com" class="email">Envie um Email</a>
+      </div>
     </div>
-  </div>
+    <div class="hero-image">
+      <img src="/hero-diagram.png" alt="Ilustração de análise de dados" />
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 LAC Analytics · contato@lacanalytics.com</p>
+  </footer>
 </body>
 </html>
